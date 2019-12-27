@@ -67,5 +67,9 @@ var promptCustomer = function (res) {
                 })
             }
         }
-    
+        if(i == res.length && correct == false){
+            console.log("Not a valid selection!");
+            promptCustomer(res);
+        }
+    })
 }
